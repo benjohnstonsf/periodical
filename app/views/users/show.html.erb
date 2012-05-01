@@ -1,0 +1,52 @@
+<h1><%= gravatar_for(@user) %> <%= @user.name %>'s profile:</h1>
+
+<% if @user == current_user %> 
+	<%= render 'shared/add_link', :link => @link %>
+<% end %>
+
+<% unless @user == current_user %>
+	<div id="follow_form">
+		<% if current_user.following?(@user) %>
+			<%= render 'unfollow', :user_to_unfollow => @user %>
+		<% else  %>
+			<%= render 'follow', :user_to_follow => @user %>
+		<% end %>
+	</div>
+<% end %>
+
+<div class="links">
+	
+	<% @user.links.each do |link| %>
+	
+		<%= render 'shared/link_profile', :link => link %>
+		
+	<% end %>
+	
+</div>
+
+<div id="side">
+	<%= link_to "Following", following_user_path(@user) %>
+	<%= link_to "Followers", followers_user_path(@user) %>
+</div>
+
+<% unless @current_user.nil? %>
+<script>
+$('a.instapaper').click(function() {
+	var url = $(this).parents('.link').find('.link_title').children('a').attr('href')
+	$.ajax({
+	    type: 'GET',
+	    dataType: 'jsonp',
+	    url:'http://www.instapaper.com/api/add',
+	    data: {"url": url , "username": "<%= @current_user.email %>", "password": "brucelee1" },
+	    context: document.body,
+	    error: function() { 
+	      alert('There was an error!');
+	    },
+	    success: function() {
+	      alert('Page sent');
+	    },
+	    jsonp: 'jsonp'
+	});
+});
+</script>
+<% end%>

@@ -1,0 +1,10 @@
+$(".link-loading").show("slow");
+$('#link_url').val('');
+setTimeout(function() {
+    $(".link-loading").html("<%= escape_javascript(render 'shared/link_home', :link => @link) %>");
+}, 1000);
+
+$(".btn-inverse").val("Link added").removeAttr('submit').css("color", "#F5F6F7");
+$(".btn-inverse").popover({ html : true });
+
+

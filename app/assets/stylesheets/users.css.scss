@@ -1,0 +1,51 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#follow_form {
+	input.btn {
+		width: 80px !important;
+	}
+}
+
+
+div.links {
+	max-width: 768px;
+	div.link {
+		margin-bottom: 2em;
+		height: 85px;
+		.instapaper_individual_link {
+			width: 80px !important;
+		}
+		div.main {
+			margin-right: 5%;
+			float: left;
+			width: 80%;
+			div.info {
+				h5 {
+					float: left;
+					
+				}
+				
+				h5#time {
+					float: right;
+					color: #BEBEBE;
+				}
+				
+			}
+		}
+		
+		
+		div.side {
+			width: 15%;
+			float: right;
+			
+			a {
+				float: left;
+				
+				width: 55px;
+				margin: 5px 0;
+			}
+		}
+	}
+}

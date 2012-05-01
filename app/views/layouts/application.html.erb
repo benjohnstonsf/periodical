@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Periodical</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= favicon_link_tag "periodical.ico"  %>
+  <%= csrf_meta_tags %>
+</head>
+<% if !user_signed_in? && params["action"] == "home" %>
+<body>
+	
+	<div id="page-wrap">
+	
+		<h1>PERIODICAL</h1>
+		<h3>Find something great to read</h3>
+		<%= link_to "Sign in", new_user_session_path, :class => "btn btn-large" %>
+		<%= link_to "Join", new_user_registration_path, :class => "btn btn-large" %>
+		</div>
+		
+		<div id="bg">
+			<img src="http://c.buyoly.com/mike-matas-preventi-shoes-lg.jpg" alt="">
+		</div>
+		
+  </body>	
+  </html>
+<% else %>
+<body>
+		  <%= render 'layouts/header' %>
+			<div class="container" id="container_body">
+
+			<!-- 	<% flash.each do |key, value| %>
+				<div class="alert alert-<%= key %>"><%= value %></div>
+				<% end %> -->
+					<%= yield %>
+			</div>
+</body>
+</html>
+    <% end %>
+ 

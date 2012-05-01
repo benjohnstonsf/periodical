@@ -1,0 +1,22 @@
+<div class="registration_container">
+  <h2 class="welcome">Join</h2><br />
+
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+    <div><% f.label :name %>
+    <%= f.text_field :name, :placeholder => "Username (no spaces)" %></div>
+
+    <div><% f.label :email %>
+    <%= f.email_field :email, :placeholder => "Email" %></div>
+
+    <div><% f.label :password %>
+    <%= f.password_field :password, :placeholder => "Password" %></div>
+
+    <div><% f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, :placeholder => "Confirm password" %></div>
+
+    <div><%= f.submit "Sign up", :class => "btn-large" %></div>
+  <% end %>
+
+  <%= render "links" %>
+</div>

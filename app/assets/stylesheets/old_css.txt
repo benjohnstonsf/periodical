@@ -1,0 +1,391 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+
+
+.brand {
+    color: #333 !important;
+    font-size: 2em !important;
+    margin-top: 3px;
+}
+
+.brand:hover{
+    color: #fff !important;
+    text-shadow:0 -1px 1px rgba(0,0,0,0.5) !important;
+}
+
+.navbar-inner li{
+    margin-top: 6px;
+}
+
+.navbar .nav > li > a{
+    color: #333 !important;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.15),  
+                0 1px 0 rgba(255,255,255,0.8) !important;
+}
+
+.navbar .nav > li > a:hover{
+    color: #fff !important;
+    text-shadow:0 -1px 1px rgba(0,0,0,0.5) !important;
+}
+
+.navbar-inner {
+    height: 40px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    vertical-align: center !important;
+    background-color: #fff !important;
+    background-image: -moz-linear-gradient(top, #fff, #ccc) !important;
+    background-image: -ms-linear-gradient(top, #fff, #ccc) !important;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#fff)) !important;
+    background-image: -webkit-linear-gradient(top, #fff, #ccc) !important;
+    background-image: -o-linear-gradient(top, #fff, black) !important;
+    background-image: linear-gradient(top, #fff, #ccc) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*.navbar-inner {
+  padding-left: 20px !important;
+  padding-top: 20px !important;
+  vertical-align: center !important;
+  zoom: 1 !important;
+  height: 60px !important;
+  padding-right: 20px !important;
+  background-color: #fcfbfd !important;
+  background-image: -moz-linear-gradient(top, #fcfbfd, #fcfbfd) !important;
+  background-image: -ms-linear-gradient(top, #fcfbfd, #fcfbfd) !important;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfbfd), to(#fcfbfd)) !important;
+  background-image: -webkit-linear-gradient(top, #fcfbfd, #fcfbfd) !important;
+  background-image: -o-linear-gradient(top, #fcfbfd, #fcfbfd) !important;
+  background-image: linear-gradient(top, #fcfbfd, #fcfbfd) !important;
+  background-repeat: repeat-x !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfbfd', endColorstr='#fcfbfd', GradientType=0) !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+}*/
+	
+body {
+	background-color: #FFFAF0 !important;
+	background-image: url("concrete_wall_3.png");
+	background-repeat: repeat;
+
+}
+
+div.well.sidebar-nav {
+    color: green;
+}
+.span3 {
+    float: right !important;
+    color: green;
+    box-shadow: 3px 3px 3px #aaa;
+}
+.span3 h3{
+    text-shadow:0 -1px 0 rgba(0,0,0,0.15),  
+                0 1px 0 rgba(255,255,255,0.8);
+}
+
+#container_body {
+	margin-top: 80px;	
+/*  border: solid black 1px !important;
+*/	
+}
+
+input.btn-large {
+    color: white !important;
+    width: 220px !important;
+}
+
+input#link_display_title, input#link_url {
+	width: 500px;
+}
+
+/*******************************Links*********************************************/
+.link {
+/*	opacity:0.7;*/
+	background: #fff !important;
+	width: 850px !important;
+	height: 110px !important;
+	padding-left: 0px !important;
+	padding-bottom: 0px !important;
+	margin: 0px !important;
+    margin-bottom: 15px !important;
+    box-shadow: 3px 3px 3px #aaa;
+    border-radius: 6px;
+/*    border: solid red 1px;
+*/}
+
+.link-loading{
+    display: none;
+    width: 850px;
+}
+
+.link-left {
+	margin-top: 0px;
+	width: 650px !important;
+	height: 110px !important;
+	padding-left: 0px;
+	float: left !important;
+/*  border-right: 3px solid #ddd !important;
+*/	border-right: 1px dotted silver !important;
+    
+/*    border: solid black 1px !important;
+*/}
+
+.title_block {
+    height: 28px;
+    width: 650px;
+    padding-top: 7px;
+}
+
+.link_fav {
+    padding-left: 15px;
+}
+
+img.bordered-fav {
+	vertical-align: middle;
+	margin-bottom: 4px;
+	padding-right: 1px;
+/*  border: 1px solid #c2c2c2;
+*/}
+
+.link_title a{
+	padding-left: 4px !important;
+	margin-top: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;	
+    font-size: .95em;
+    color: #04c;
+}
+
+.description_block {
+    width: 610px;
+    height: 39px;
+    padding-left: 42px;
+    padding-right: 10px;
+    padding-top: 3px;
+/*    border: solid black 1px !important;        
+*/}
+
+.description_block p{
+    vertical-align: middle;
+    font-family: "Helvetica Neue";
+    color: #211F1F;
+	
+}
+
+.meta_block {
+    height: 30px;
+    width: 650px;
+
+/*    border: solid green 1px;
+*/}
+
+#source {
+    height: 25px;
+    width: 295px;
+    float: left;
+    padding-left: 42px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    vertical-align: middle;
+/*    border: solid blue 1px;
+*/}
+
+#source a{
+        color: #04c !important;
+
+
+}
+
+.author {
+    margin: 0px !important;
+    padding: 0px !important;
+    color: #211F1F !important;    
+}
+
+.pipe {
+    margin: 0px !important;
+    padding: 0px !important;
+    color: #211F1F !important; 
+}
+
+
+#time {
+    height: 25px;
+    width: 288px;
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 5px;
+/*    border: solid blue 1px;
+*/}
+
+.time-position {
+    vertical-align: middle !important;
+    float: right;
+    line-height: 25px;
+    height: 25px;
+    color: #aaa;
+}
+
+.side {
+    margin: 0px !important;
+    padding: 0px !important;
+    float: right !important;
+    height: 110px !important;
+    width: 146px !important;
+/*    border: solid purple 1px;
+*/}
+
+.link-right {
+    margin: 0px !important;
+    padding: 0px !important;
+    float: right !important;
+    height: 110px !important;
+    width: 196px !important;
+/*    border: solid purple 1px;
+*/}
+
+.mini-gravatar{
+    border-radius: 5px;
+    float: right;
+    margin: 12px;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+.shared-by {
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.shared-by a{
+    font-size: 1.3em;
+    color: #04c;
+}
+
+.shared-by p{
+/*    font-size: 1.3em;
+*/    margin-top: 0px;
+line-height: 2px;
+margin-top: 5px;
+}
+
+.social_btn {
+    margin: 7px;
+    float: left;
+}
+
+/************************Homepage*********************/
+	
+#bg {
+	position:fixed;
+	top:-50%;
+	left:-50%;
+	width:200%;
+	height:200%;
+}
+#bg img {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	min-width:50%;
+	min-height:50%;
+}
+
+#page-wrap { 
+    position: relative; 
+    padding: 20px;
+    z-index: 2; 
+    width: 400px; 
+    height: 140px;
+    margin: 50px 50px; 
+/*    border: solid #000 1px;
+*/}
+
+#page-wrap h1{
+    font-family: "helvetica";
+    text-align: center; 
+    line-height: 1.21em;
+    color: #FFFAF0;
+    font-size: 4em;
+    text-shadow:0 -1px 1px rgba(0,0,0,0.4);
+}
+
+#page-wrap h3{
+    text-align: center;
+    font-size: 1.6em;
+    font-family: "futura";
+    line-height: 1.1em;
+    color: #777;
+    text-shadow:0 1px 0 rgba(255,255,255,0.5); 
+}
+
+#page-wrap p{
+    float: right;
+
+}
+
+#page-wrap .btn-large{
+    margin-right: 2px;
+    margin-top: 10px;
+    color: #777;
+    display: inline-block;
+    position: relative;
+    left: 46px;
+    width: 120px;
+
+}
+
+.welcome{
+    text-shadow:0 -1px 0 rgba(0,0,0,0.15),  
+                0 1px 0 rgba(255,255,255,0.8);
+}
+
+.brand{
+    text-shadow:0 -1px 0 rgba(0,0,0,0.15),  
+                0 1px 0 rgba(255,255,255,0.8);
+}
+
+.journobots h1{
+    float: left;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-size: 180%;
+
+}
+
+.journobots img{
+        margin-top: 38px;
+        margin-left: 10px;
+
+/*    float: right;
+*/}

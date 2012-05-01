@@ -1,1 +1,1 @@
-Periodical is a  
+Periodical is a discovery engine for fascinating articles. Discover and share brain food with like-minded folk through a Twitter like pub/sub system.

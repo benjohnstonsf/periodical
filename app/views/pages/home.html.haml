@@ -1,0 +1,9 @@
+- if user_signed_in?
+  = render :partial => 'shared/add_link', :locals => {:link => @link}
+  .links
+    = render 'shared/link_loading'
+    - @feed.each do |link|
+      = render :partial => 'shared/link_home', :locals => {:link => link, :instapaper => @instapaper}
+  = render 'shared/featured'
+
+

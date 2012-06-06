@@ -1,0 +1,27 @@
+.link
+  .link-left
+    .title_block
+      %h3
+      %span.link_fav= image_tag(link.favicon_url, :height => "16", :width => "16", :class=>"bordered-fav") if link.favicon_url
+      %span.link_title= link_to link.display_title, link.url, :target => '_blank', :title => link.title
+    .description_block
+      %p= link.description
+    .meta_block
+      %h5#source
+        .source-author-position
+          = link_to link.display_url, link.url
+          - if link.author
+            %span.pipe |
+            %span.author= link.author
+      %h5#time
+        .time-position
+          = time_ago_in_words(link.created_at) + " ago"
+  .link-right
+    = gravatar_image_tag(User.find(link.user_id).email, :alt => User.find(link.user_id).name, :class => 'mini-gravatar', :gravatar => { :size => 42 })
+    .shared-by
+      %p Shared by
+      = link_to User.find(link.user_id).name, user_path(User.find(link.user_id))
+    .social_btn
+      %i.icon-share
+      Share
+

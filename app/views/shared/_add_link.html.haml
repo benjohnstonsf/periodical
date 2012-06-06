@@ -1,0 +1,6 @@
+= form_for @link, :remote => true, :html => { :id => 'new_link'} do |f|
+  %br/
+  - @link.errors.full_messages.each do |error|
+    %p.errors= error
+  = f.text_field :url, :placeholder => "This is where you share brain food."
+  = f.submit "Add Article", :class => "btn-inverse", :method => :post, :title => "Link already added", "data-content" => "We only allow 1 link to be added every 12 hours, so make them special."

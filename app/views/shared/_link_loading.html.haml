@@ -1,0 +1,26 @@
+.link-loading
+  .link
+    .link-left
+      .journobots
+        = image_tag "fetch3.jpg", :id => "fetch"
+        %h1 fetching content
+        = image_tag "loader.gif", :id => "loading"
+    .link-right
+      = gravatar_image_tag(current_user.email, :alt => current_user.name, :class => 'mini-gravatar', :gravatar => { :size => 48 })
+      .shared-by
+        %p Shared by
+        = link_to current_user.name, user_path(current_user.id)
+      .social_btn
+        %i.icon-share
+        Share
+
+
+
+
+
+
+
+
+
+
+

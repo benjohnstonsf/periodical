@@ -16,9 +16,15 @@
 		</div>
 	</div>
 	<div class="link-right">
-		<%= gravatar_image_tag(User.find(link.user_id).email, :alt => User.find(link.user_id).name, :class => 'mini-gravatar', :gravatar => { :size => 52 })%>
+		<%= gravatar_image_tag(User.find(link.user_id).email, :alt => User.find(link.user_id).name, :class => 'mini-gravatar', :gravatar => { :size => 42 })%>
 		<div class="shared-by"><p>Shared by </p> 
 		<%= link_to User.find(link.user_id).name, user_path(User.find(link.user_id)) %></div>
 		<div class="social_btn"><i class="icon-share"></i> Share</div>
+		<!-- <div class="share-buttons"> 
+		    <div id="tweet-ribbon"><%= image_tag("tweet-ribbon.png", :alt=> "ribbon") %></div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url=<%= link.url %> data-via="your_screen_name" data-lang="en">Tweet</a>
+	        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	        </script>
+	    </div> -->
 	</div>
 </div>

@@ -1,11 +1,11 @@
 <% if user_signed_in? %>
-	    <%= render 'shared/add_link', :link => @link %>
-	<div class="links">
-		<%= render 'shared/link_loading'%>
-		<% @feed.each do |link| %>
-			<%= render 'shared/link_home', :link => link, :instapaper => @instapaper %>
-		<% end %>	
-	</div>
-	<%= render 'shared/featured'%>
+    <%= render 'shared/add_link', :link => @link %>
+<div class="links">
+	<%= render 'shared/link_loading'%>
+	<% @feed.each do |link| %>
+		<%= render 'shared/link_home', :link => link, :instapaper => @instapaper %>
+	<% end %>	
+</div>
+<%= render 'shared/featured'%>
 <% end %>
 

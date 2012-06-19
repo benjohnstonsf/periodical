@@ -7,7 +7,7 @@ gem 'devise'
 gem 'pismo'
 gem "twitter-bootstrap-rails"
 gem 'gravatar_image_tag'
-gem 'tlsmail'
+gem 'tlsmail', :git => "https://github.com/benjohnstonsf/tlsmail.git"
 gem 'rspec-rails', '~> 2.8.1', :group => [:test, :development]
 gem 'haml'
 

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/benjohnstonsf/tlsmail.git
+  revision: a53d44c342d06e00a0168b8005c9c8bbeff974dc
+  specs:
+    tlsmail (0.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -174,7 +180,6 @@ GEM
       libv8 (~> 3.3.10)
     thor (0.14.6)
     tilt (1.3.3)
-    tlsmail (0.0.1)
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
@@ -210,6 +215,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spork (~> 0.9.0)
   sqlite3 (~> 1.3.5)
-  tlsmail
+  tlsmail!
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

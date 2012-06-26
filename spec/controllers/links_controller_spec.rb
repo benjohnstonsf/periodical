@@ -42,16 +42,6 @@ describe LinksController do
           post :create, successful_params
         }.to change(Link, :count).by(1)
       end
-      
-      it 'redirects to links index' do
-        post :create, successful_params
-        response.should redirect_to(user_path(@user))
-      end
-      
-      it 'provides a success message' do
-        post :create, successful_params
-        flash[:success].should == "Added a link"
-      end
     end
     
     

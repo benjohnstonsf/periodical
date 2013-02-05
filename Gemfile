@@ -1,8 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'sqlite3', '~> 1.3.5'
+gem 'pg'
+
+gem 'hoe', '~> 3.0'
+gem 'mini_portile', '~> 0.2.2'
+gem 'rake-compiler', '~> 0.7.0'
+gem 'rdoc', '~> 3.10'
 gem 'jquery-rails', '~> 2.0.1'
+
 gem 'devise'
 gem 'pismo'
 gem "twitter-bootstrap-rails"
@@ -10,6 +16,7 @@ gem 'gravatar_image_tag'
 gem 'tlsmail', :git => "https://github.com/benjohnstonsf/tlsmail.git"
 gem 'rspec-rails', '~> 2.8.1', :group => [:test, :development]
 gem 'haml'
+gem 'multi_json', '1.1.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

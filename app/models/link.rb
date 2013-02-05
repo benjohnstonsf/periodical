@@ -106,7 +106,7 @@ class Link < ActiveRecord::Base
   end
   
   def ensure_title_format
-    if self.display_title.length > 62
+    if display_title && self.display_title.length > 62
       self.display_title = title_format self.display_title
     end
   end

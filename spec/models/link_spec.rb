@@ -3,7 +3,8 @@ require 'spec_helper'
 describe Link do
  
   it "requires a url" do
-    should_not be_valid
+    subject.url = ""
+    subject.should_not be_valid
     subject.errors[:url].should_not be_empty
   end
   
@@ -17,6 +18,7 @@ describe Link do
     @no_title = Link.new(:url => "http://web.archive.org/web/20050324062234/http:/ycombinator.com/")
     @no_title.save 
     @no_title.title.should_not be_nil
+    puts @no_title.title
   end
   
   it 'requires a unique url to that user' do

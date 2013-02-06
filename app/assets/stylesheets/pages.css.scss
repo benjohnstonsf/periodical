@@ -1,3 +1,178 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #F5F6F7;
+}
+
+.registration_container{
+  background-color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  width: 220px;
+  border: 1px solid silver;
+}
+
+.brand.periodical {
+  color: #333;
+  font-size: 2.5em;
+  margin-top: 6px;
+  margin-right: 420px;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.15),
+  0 1px 0 rgba(255,255,255,0.8);
+}
+
+.logo {
+  float: left;
+  margin-right: 12px;
+  margin-top: 8px;
+
+}
+
+.brand:hover{
+  color: #aaa ;
+  text-shadow:0 -1px 1px rgba(0,0,0,0.5) ;
+}
+
+.navbar-inner li{
+  margin-top: 15px;
+}
+
+.navbar .nav > li > a{
+  font-size: 1.15em;
+  color: #333 ;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.15),
+  0 1px 0 rgba(255,255,255,0.8) ;
+}
+
+.navbar .nav > li > a:hover{
+  color: #aaa ;
+  text-shadow:0 -1px 1px rgba(0,0,0,0.5) ;
+}
+
+.navbar-inner {
+  height: 60px ;
+  width: 100% ;
+  padding-left: 160px ;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  vertical-align: center ;
+  background-color: #fff ;
+  background-image: -moz-linear-gradient(top, #fff, #fff) ;
+  background-image: -ms-linear-gradient(top, #fff, #fff) ;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff)) ;
+  background-image: -webkit-linear-gradient(top, #fff, #fff) ;
+  background-image: -o-linear-gradient(top, #fff, #fff) ;
+  background-image: linear-gradient(top, #fff, #fff) ;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+div.well.sidebar-nav {
+  background-color: #fff ;
+/*    background-image: url("concrete_wall_3.png") ;
+*/}
+div.span2 {
+  float: right ;
+  margin-left: 0px ;
+  margin-right: 7px ;
+  box-shadow: 3px 3px 3px #aaa;
+  border-radius: 5px;
+  border: 1px solid #ddd ;
+}
+
+.span2 h3{
+  text-shadow:0 -1px 0 rgba(0,0,0,0.15),
+  0 1px 0 rgba(255,255,255,0.8);
+  border-bottom: 2px #666 solid;
+}
+
+
+#container_body.container{
+  width:860px;
+  position:absolute;
+  left:50%;
+  margin-left:-430px;
+  margin-top: 20px;
+}
+
+/************************Homepage*********************/
+
+#bg {
+  position:fixed;
+  top:-50%;
+  left:-50%;
+  width:200%;
+  height:200%;
+}
+#bg img {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  min-width:50%;
+  min-height:50%;
+}
+
+#page-wrap {
+  position: relative;
+  padding: 20px;
+  z-index: 2;
+  width: 400px;
+  height: 140px;
+  margin: 50px 50px;
+/*    border: solid #000 1px;
+*/}
+
+#page-wrap h1{
+  font-family: "helvetica";
+  text-align: center;
+  line-height: 1.21em;
+  color: #FFFAF0;
+  font-size: 4em;
+  text-shadow:0 -1px 1px rgba(0,0,0,0.4);
+}
+
+#page-wrap h3{
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "futura";
+  line-height: 1.1em;
+  color: #777;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+}
+
+#page-wrap p{
+  float: right;
+
+}
+
+#page-wrap .btn-large{
+  margin-right: 2px;
+  margin-top: 10px;
+  color: #777;
+  display: inline-block;
+  position: relative;
+  left: 46px;
+  width: 120px;
+
+}
+
+.welcome{
+  text-shadow:0 -1px 0 rgba(0,0,0,0.15),
+  0 1px 0 rgba(255,255,255,0.8);
+}

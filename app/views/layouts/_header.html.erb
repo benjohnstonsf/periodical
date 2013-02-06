@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
       </a>
       <%= image_tag "logo5.png", :height => "50", :width => "50", class: "logo" %>
-      <%= link_to "Periodical", root_path, class: "brand" %>
+      <%= link_to "Periodical", root_path, class: "brand periodical" %>
       <div class="nav-collapse">
         <ul class="nav nav-pills">
           <% if user_signed_in? %>
@@ -21,7 +21,7 @@
           <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
 	        <% end %>
         </ul>		
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
   </div>
 </div>

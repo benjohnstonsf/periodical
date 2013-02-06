@@ -4,48 +4,44 @@
 
 div#follow_form {
 	input.btn {
-		width: 80px !important;
+		width: 80px;
 	}
 }
 
+.profile-links {
+  max-width: 768px;
+}
 
-div.links {
-	max-width: 768px;
-	div.link {
-		margin-bottom: 2em;
-		height: 85px;
-		.instapaper_individual_link {
-			width: 80px !important;
-		}
-		div.main {
-			margin-right: 5%;
-			float: left;
-			width: 80%;
-			div.info {
-				h5 {
-					float: left;
+.profile-link {
+  margin-bottom: 2em;
+  height: 85px;
+  .instapaper_individual_link {
+  width: 80px;
+  }
+}
 
-				}
+.profile-main{
+  margin-right: 5%;
+  float: left;
+  width: 80%;
+}
 
-				h5#time {
-					float: right;
-					color: #BEBEBE;
-				}
+.profile-info {
+  h5 {
+      float: left;
+  }
+  h5#time {
+      float: right;
+      color: #BEBEBE;
+  }
+}
 
-			}
-		}
-
-
-		div.side {
-			width: 15%;
-			float: right;
-
-			a {
-				float: left;
-
-				width: 55px;
-				margin: 5px 0;
-			}
-		}
-	}
+.profile-side {
+  width: 15%;
+  float: right;
+  a {
+      float: left;
+      width: 55px;
+      margin: 5px 0;
+  }
 }

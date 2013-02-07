@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.1'
 gem 'pg'
 
-gem 'hoe', '~> 3.0'
 gem 'mini_portile', '~> 0.2.2'
 gem 'rake-compiler', '~> 0.7.0'
 gem 'rdoc', '~> 3.10'
@@ -25,6 +24,7 @@ group :assets do
 end
 
 group :test do
+  gem 'hoe', '~> 3.0'
   gem "rspec2-rails-views-matchers", "~> 0.2.2"
   gem 'factory_girl_rails', '~> 1.7.0'
   gem 'capybara', '~> 1.1.2'
